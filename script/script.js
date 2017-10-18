@@ -77,19 +77,54 @@ job = prompt('what does gabriel do?');
    	console.log('draw');
    }*/
 
-   function calculateage(yearofbirth){
-   	var age = 2016 - yearofbirth;
-   	return age;
-   }
+//    function calculateage(yearofbirth){
+//    	var age = 2016 - yearofbirth;
+//    	return age;
+//    }
 
-    var agegabriel = calculateage(1995);
-    var agemartin = calculateage(1987);
-    var agemarcos = calculateage(1990);
+//     var agegabriel = calculateage(1995);
+//     var agemartin = calculateage(1987);
+//     var agemarcos = calculateage(1990);
    
 
-function yearsuntil(name,year) {
-var age = calculateage(year);
-var retirement = 45-age;
-console.log( name + " " + 'played in '+ retirement + 'years');
+// function yearsuntil(name,year) {
+// var age = calculateage(year);
+// var retirement = 45-age;
+// console.log( name + " " + 'played in '+ retirement + 'years');
+// }
+// yearsuntil('gabriel',1995);
+
+
+// function somefun(par){
+// 	//code
+// }
+
+// var somefun = function(par){
+// 	//code
+// }
+// //expressions
+// 3+4;
+// var x =3;
+// //statements
+// if (x === 5){
+
+// }
+
+var names = ['gabriel','marcos','martin'];
+var years = new Array (1995, 1990, 1985);
+
+console.log(names [1]);
+names[0]= 'carlos';
+console.log(names);
+
+
+var carlos = [ 'carlos','reyes',1995,'teache',false];
+carlos.push('blue');
+carlos.unshift('mr');
+carlos.pop();
+carlos.shift();
+console.log(carlos)
+
+if (carlos.indexOf('teacher')=== -1){
+	console.log('carlos is not a teacher')
 }
-yearsuntil('gabriel',1995);
