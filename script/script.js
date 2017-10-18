@@ -28,7 +28,7 @@
 //  }
 
 
- var age = 25;
+ /*var age = 25;
  if (age < 20 ){
  	console.log('gabriel is a teenager');
  } else if(age >= 20 && age < 30){
@@ -51,3 +51,24 @@ job = prompt('what does gabriel do?');
          default:
          console.log('something else');
  }
+ */
+   var heighgabriel=185;
+   var heighmarcos=145;
+   var heighmartin=180;
+   var agegabriel=22;
+   var agemarcos=27;
+   var agemartin=33;
+   var scoregabriel = heighgabriel + 5 * agegabriel;
+   var scoremarcos = heighmarcos + 5 * agemarcos;
+   var scoremartin= heighmartin+ 5* agemartin;
+
+   if ( scoremarcos > scoregabriel && scoremarcos > scoremartin){
+   	console.log('marcos wins the game with' + scoremarcos + 'points');
+   } else if ( scoremartin > scoremarcos && scoremartin > scoregabriel){
+   	console.log('martin wins the game with'+scoremartin + 'points');
+   }else if (scoregabriel  > scoremartin && scoregabriel > scoremarcos)
+   console.log('gabriel wins the game with'+scoregabriel+'points')
+   else if(scoremarcos === scoregabriel === scoremartin){
+   	console.log('draw');
+   }
+
