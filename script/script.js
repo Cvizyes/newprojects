@@ -51,31 +51,33 @@ job = prompt('what does gabriel do?');
          default:
          console.log('something else');
  }
- */
- /*
-   var heighgabriel=185;
-   var heighmarcos=145;
-   var heighmartin=180;
-   var agegabriel=22;
-   var agemarcos=27;
-   var agemartin=33;
-   var scoregabriel = heighgabriel + 5 * agegabriel;
-   var scoremarcos = heighmarcos + 5 * agemarcos;
-   var scoremartin= heighmartin+ 5* agemartin;
+ *//////////////////////////////////////////
+ 
+   // var heighgabriel=185;
+   // var heighmarcos=145;
+   // var heighmartin=180;
+   // var agegabriel=22;
+   // var agemarcos=27;
+   // var agemartin=33;
+   // var scoregabriel = heighgabriel + 5 * agegabriel;
+   // var scoremarcos = heighmarcos + 5 * agemarcos;
+   // var scoremartin= heighmartin+ 5* agemartin;
 
 
-   //the comparations//
+   // //the comparations/
 
 
-   if ( scoremarcos > scoregabriel && scoremarcos > scoremartin){
-   	console.log('marcos wins the game with' + scoremarcos + 'points');
-   } else if ( scoremartin > scoremarcos && scoremartin > scoregabriel){
-   	console.log('martin wins the game with'+scoremartin + 'points');
-   }else if (scoregabriel  > scoremartin && scoregabriel > scoremarcos)
-   console.log('gabriel wins the game with'+scoregabriel+'points')
-   else if(scoremarcos === scoregabriel === scoremartin){
-   	console.log('draw');
-   }*/
+
+
+   // if ( scoremarcos > scoregabriel && scoremarcos > scoremartin){
+   // 	console.log('marcos wins the game with' + scoremarcos + 'points');
+   // } else if ( scoremartin > scoremarcos && scoremartin > scoregabriel){
+   // 	console.log('martin wins the game with'+scoremartin + 'points');
+   // }else if (scoregabriel  > scoremartin && scoregabriel > scoremarcos)
+   // console.log('gabriel wins the game with'+scoregabriel+'points')
+   // else if(scoremarcos === scoregabriel === scoremartin){
+   // 	console.log('draw');
+   // }
 
 //    function calculateage(yearofbirth){
 //    	var age = 2016 - yearofbirth;
@@ -110,49 +112,73 @@ job = prompt('what does gabriel do?');
 
 // }
 
-/*var years = new Array (1995, 1990, 1985);
+// å
 
-console.log(names [1]);
-names[0]= 'carlos';
-console.log(names);
+///////////////////////////////////
 
 
-var carlos = [ 'carlos','reyes',1995,'teache',false];
-carlos.push('blue');
-carlos.unshift('mr');
-carlos.pop();
-carlos.shift();
-console.log(carlos)
+// var carlos = {
+// 	name:'carlos',
+// 	lastname: 'reyes',
+// 	yearofbirth:1995,
+// 	job:'teacher',
+// 	ismarried:false
+// };
 
-if (carlos.indexOf('teacher')=== -1){
-	console.log('carlos is not a teacher')
-}*/
+// console.log(carlos.lastname);
+// console.log(carlos['lastname']);
 
+// var xyz = 'job';
+// console.log(carlos[xyz]);
+
+// carlos.lastname='vizcaino';
+// carlos['job']= 'programmer';
+
+// console.log(carlos)
+
+// var jane = new object();
+// jane.name='jane';
+// jane.lastname='smith';
+// jane['yearofbirth']=1969;
+// jane ['job']='retired';
+// jane['ismarried']=true;
+// console.log(jane);
+
+
+///////////////////////////////
+//VERCION 1
+// var carlos = {
+// 	name:'carlos',
+// 	lastname: 'reyes',
+// 	yearofbirth:1995,
+// 	job:'teacher',
+// 	ismarried:false,
+// 	family:['juan','joan'],
+// 	calculateage:function(yearofbirth){
+// 		//we can use 'this' to refer to the var
+// 		return 2016 - this.yearofbirth;
+// 	}
+// };
+
+// console.log(carlos.calculateage(1990));
+// console.log(carlos.calculateage());
+// var age = carlos.calculateage();
+// carlos.age = age;
+// console.log(carlos);
+/////////////////////
+
+//VERSION 2
 
 var carlos = {
 	name:'carlos',
 	lastname: 'reyes',
 	yearofbirth:1995,
 	job:'teacher',
-	ismarried:false
+	ismarried:false,
+	family:['juan','joan'],
+	calculateage:function(){
+		this.age = 2016 - this.yearofbirth;
+	}
 };
-
-console.log(carlos.lastname);
-console.log(carlos['lastname']);
-
-var xyz = 'job';
-console.log(carlos[xyz]);
-
-carlos.lastname='vizcaino';
-carlos['job']= 'programmer';
-
-console.log(carlos)
-
-var jane = new object();
-jane.name='jane';
-jane.lastname='smith';
-jane['yearofbirth']=1969;
-jane ['job']='retired';
-jane['ismarried']=true;
-console.log(jane);
-
+carlos.calculateage();
+console.log(carlos);
