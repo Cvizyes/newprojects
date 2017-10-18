@@ -110,8 +110,7 @@ job = prompt('what does gabriel do?');
 
 // }
 
-var names = ['gabriel','marcos','martin'];
-var years = new Array (1995, 1990, 1985);
+/*var years = new Array (1995, 1990, 1985);
 
 console.log(names [1]);
 names[0]= 'carlos';
@@ -127,4 +126,33 @@ console.log(carlos)
 
 if (carlos.indexOf('teacher')=== -1){
 	console.log('carlos is not a teacher')
-}
+}*/
+
+
+var carlos = {
+	name:'carlos',
+	lastname: 'reyes',
+	yearofbirth:1995,
+	job:'teacher',
+	ismarried:false
+};
+
+console.log(carlos.lastname);
+console.log(carlos['lastname']);
+
+var xyz = 'job';
+console.log(carlos[xyz]);
+
+carlos.lastname='vizcaino';
+carlos['job']= 'programmer';
+
+console.log(carlos)
+
+var jane = new object();
+jane.name='jane';
+jane.lastname='smith';
+jane['yearofbirth']=1969;
+jane ['job']='retired';
+jane['ismarried']=true;
+console.log(jane);
+
