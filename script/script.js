@@ -169,16 +169,66 @@ job = prompt('what does gabriel do?');
 
 //VERSION 2
 
-var carlos = {
-	name:'carlos',
-	lastname: 'reyes',
-	yearofbirth:1995,
-	job:'teacher',
-	ismarried:false,
-	family:['juan','joan'],
-	calculateage:function(){
-		this.age = 2016 - this.yearofbirth;
+// var carlos = {
+// 	name:'carlos',
+// 	lastname: 'reyes',
+// 	yearofbirth:1995,
+// 	job:'teacher',
+// 	ismarried:false,
+// 	family:['juan','joan'],
+// 	calculateage:function(){
+// 		this.age = 2016 - this.yearofbirth;
+// 	}
+// };
+// carlos.calculateage();
+// console.log(carlos);
+
+
+//////////////////////////
+      // loops is going to be working until that i stop it//
+
+  for ( var i = 0; i <10; i++){
+  	console.log(i);
+
+  }
+// 0, true, print 0, update i to 10
+// 1, true, print 1, update i to 10
+// 2, true, print 2, update i to 10
+// 3, true, print 3, update i to 10
+// .
+// .
+// 9, true, print 9, update i to 10
+// 10, false, end loop
+var names = ['juan' , 'pedro' , 'manuel' , 'julio' , 'cesar'];
+// for (var i = 0; i < names.length ; i++){
+// 	console.log(names [i]);
+// }
+
+// for (var i = names.length -1; i >= 0; i--){
+// 	console.log(names[i]);
+// }
+
+var i = 0;
+while(i < names.length){
+	console.log(names[i]);
+	i++;
+}
+
+
+for (var i = 0; i <= 5; i++) {
+	console.log(i);
+
+	if (i=== 3){
+		break;
 	}
-};
-carlos.calculateage();
-console.log(carlos);
+}
+
+
+for (var i = 0; i <= 5; i++) {
+	console.log(i);
+	
+	if (i=== 3){
+		continue;
+	}
+	console.log(i);
+}
