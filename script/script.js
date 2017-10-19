@@ -336,7 +336,7 @@
 
 ////// other section
 
-var a = 'hello!';
+/*var a = 'hello!'; 
 firts();
 
 function firts(){
@@ -352,4 +352,50 @@ function firts(){
 function third(){
 	var d = 'carlos!';
    console.log(a+d)
-}
+}*/
+
+
+//////// 
+
+/*calculateage(1995);
+ function calculateage(year){
+ 	console.log(2016-year);
+ 	console.log(this);
+ }*/
+
+ var carlos = {
+ 	name:'carlos',
+ 	yearofbirth:1994,
+ 	calculateage: function(){
+ 		console.log(this);
+ 		console.log(2017 -this.yearofbirth);
+
+ 		function innerfunction(){
+ 			console.log(this);
+ 		}
+ 		innerfunction();
+ 	}
+ }
+
+carlos.calculateage();
+
+
+
+var gabriel ={
+	name:'gabriel',
+    yearofbirth:1990
+};
+//con esta opcion podemos trasladar los datos que ya creamos, si no queremos volver a copiarlo.
+gabriel.calculateage = carlos.calculateage;
+gabriel.calculateage();
+
+
+
+
+
+
+
+
+
+
+
