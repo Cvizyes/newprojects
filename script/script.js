@@ -298,36 +298,58 @@
 
 
 
-var names = ['juan' , 'pedro' , 'manuel' , 'julio' , 'cesar'];
-for (var i = 0; i < names.length ; i++){
-	console.log(names [i]);
-}
+// var names = ['juan' , 'pedro' , 'manuel' , 'julio' , 'cesar'];
+// for (var i = 0; i < names.length ; i++){
+// 	console.log(names [i]);
+// }
 
-for (var i = names.length -1; i >= 0; i--){
-	console.log(names[i]);
-}
+// for (var i = names.length -1; i >= 0; i--){
+// 	console.log(names[i]);
+// }
 
-var i = 0;
-while(i < names.length){
-	console.log(names[i]);
-	i++;
-}
-
-
-for (var i = 0; i <= 5; i++) {
-	console.log(i);
-
-	if (i=== 3){
-		break;
-	}
-}
+// var i = 0;
+// while(i < names.length){
+// 	console.log(names[i]);
+// 	i++;
+// }
 
 
-for (var i = 0; i <= 5; i++) {
-	console.log(i);
+// for (var i = 0; i <= 5; i++) {
+// 	console.log(i);
+
+// 	if (i=== 3){
+// 		break;
+// 	}
+// }
+
+
+// for (var i = 0; i <= 5; i++) {
+// 	console.log(i);
 	
-	if (i=== 3){
-		continue;
+// 	if (i=== 3){
+// 		continue;
+// 	}
+// 	console.log(i);
+// }
+
+
+
+////// other section
+
+var a = 'hello!';
+firts();
+
+function firts(){
+	var b = 'hi!';
+	second();
+
+	function second(){
+		var c = 'hey!';
+		third(); 
 	}
-	console.log(i);
+}
+
+function third(){
+	var d = 'carlos!';
+   console.log(a+d)
 }
